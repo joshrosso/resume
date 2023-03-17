@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap');
+
+    html,
+    body {
+      min-height: 100%;
+    }
+
+    body {
+      margin: 0;
+      background-color: rgb(255, 255, 255);
+      font-family: 'JetBrains Mono', monospace;
+      background-color: #eeeeee;
+    }
+
+    .headshot {
+      height: 150px;
+      width: 150px;
+    }
+
+    .view-bar {
+      height: 100%;
+      max-width: 1000px;
+      box-shadow: 10px 0 10px -10px rgba(0, 0, 0, 0.3), -10px 0 10px -10px rgba(0, 0, 0, 0.3);
+      /* Drop shadow on the sides */
+      padding: 20px;
+      margin: 0 auto;
+      color: #fff;
+      background-color: #000;
+    }
+
+    .view-bar a {
+      color: #fff;
+    }
+
+    li {
+      margin-top: 1.2rem;
+    }
+
+    a {
+      color: #000;
+    }
+
+    a:hover {
+      color: rgb(42, 143, 237);
+    }
+
+    .headshot {
+      margin-left: 2rem;
+      border: 1px solid #000;
+    }
+
+    .headshot-container {
+      display: flex;
+      align-items: center;
+    }
+
+    hr {
+      border-color: black;
+    }
+
+    .title {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .details {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    @media (max-width: 500px) {
+      .details {
+        display: block;
+        grid-template-columns: unset;
+      }
+    }
+
+    .indented {
+      margin-top: .5rem;
+      margin-left: 2rem;
+    }
+
+    .details p {
+      margin: 6px;
+    }
+
+    .experience {
+      display: flex;
+      width: 100%;
+    }
+
+    @media (max-width: 500px) {
+      .experience {
+        display: block;
+      }
+    }
+
+    .exp-content {
+      width: 100%;
+    }
+
+    .exp-content h3 {
+      margin-top: 0;
+      border-bottom: 1px solid rgb(207, 207, 207);
+    }
+
+    .logo {
+      margin-right: 1.5rem;
+    }
+
+    .container {
+      background-color: #fff;
+      height: 100%;
+      max-width: 1000px;
+      box-shadow: 10px 0 10px -10px rgba(0, 0, 0, 0.3), -10px 0 10px -10px rgba(0, 0, 0, 0.3);
+      /* Drop shadow on the sides */
+      padding: 20px;
+      margin: 0 auto;
+    }
+
+    .span-2 {
+      grid-column: span 2;
+    }
+  </style>
+  <meta charset="utf-8">
+  <title>{{.Name}}'s Resume</title>
+</head>
+
+<body>
+  <div class="view-bar">View this resume in: <a href="https://resume.joshrosso.com">HTML</a>, <a
+      href="https://resume.joshrosso.com/resume.pdf">PDF</a>, or <a
+      href="https://resume.joshrosso.com/resume.txt">txt</a>.
+  </div>
+  <div class="container">
+    <div class="header">
+      <div class="title">
+        <div>
+          <h1>{{.Name}}</h1>
+          <p>{{.Description}}</p>
+        </div>
+        <div class="headshot-container">
+          <img class="headshot" src="{{.PhotoURL}}">
+        </div>
+      </div>
+      <hr>
+      <div class="details">
+        <p><b>email:</b> <a href="mailto:{{.Email}}">{{.Email}}</a></p>
+        <p><b>phone:</b> <a href="tel:{{.Phone}}">{{.Phone}}</a></p>
+        <p><b>area:</b> <a href="{{.LocationURL}}">{{.Location}}</a></p>
+      </div>
+      <div class="details">
+        <p><b>site:</b> <a href="https://{{.Website}}">{{.Website}}</a></p>
+        <p class="span-2"><b>github:</b> <a href="https://{{.Github}}">{{.Github}}</a></p>
+      </div>
+      <hr>
+      <div class="key-list">
+        <p><b>Languages:</b> {{.KeyLanguages}}</p>
+      </div>
+      <hr>
+      <div class="key-list">
+        <p><b>Systems:</b> {{.KeySystems}}</p>
+      </div>
+      <hr>
+    </div>
+    <div class="publications-container">
+      <h2>Publications</h2>
+      {{range .Publications}}
+      <div class="experience">
+        <div class="logo">
+          <img src="{{ .Image }}" width="150px" />
+        </div>
+        <div class="exp-content">
+          <h3>{{ .Title }}</h3>
+          <p>{{ .Description }}</p>
+        </div>
+      </div>
+      {{end}}
+      <hr>
+    </div>
+    <div class="experience-container">
+      <h2>Experience</h2>
+      {{range .Experience}}
+      <div class="experience">
+        <div class="logo">
+          <img src="{{ .LogoURL }}" width="75px" />
+        </div>
+        <div class="exp-content">
+          <h3>{{ .CompanyName }}: {{ (index .Jobs 0).JobTitle }}</h3>
+          <p>{{ .Description }}</p>
+          {{if gt (len .Accomplishments) 0}}
+          <h4>Accomplishments:</h4>
+          <ul>
+            {{range .Accomplishments}}
+            <li>{{.Thing}}</li>
+            {{end}}
+          </ul>
+          {{end}}
+          <div class="company">
+            <h4>Positions held:</h4>
+            <ul>
+              {{ range .Jobs }}
+              <li>{{ .JobTitle }}: {{ df .Start }}{{if .End}} - {{ df .End }}{{end}}</li>
+              {{end}}
+            </ul>
+          </div>
+        </div>
+      </div>
+      {{end}}
+      <hr>
+    </div>
+    <div class="publications-conatiner">
+      <h2>Projects and Talks</h2>
+      <p>I recommend visiting my website, <a href="https://joshrosso.com">joshrosso.com</a>, for a full
+        understanding of my many projects and talks. However, below is a list of
+        some notable ones.</p>
+      <ul>
+        {{ range .Projects }}
+        <li><a href="{{ .URL }}">{{ .Title }}</a></li>
+        <li class="indented">{{ .Description }}</li>
+        {{end}}
+      </ul>
+    </div>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,198 @@
+name: Josh Rosso
+photoUrl: 'https://files.joshrosso.com/img/site/resume/headshot.jpg'
+phone: (720)853-4740
+email: joshrosso@gmail.com
+website: joshrosso.com
+github: github.com/joshrosso
+location: Boulder, CO
+locationUrl: 'https://www.google.com/maps/place/Boulder,+CO'
+subtitle: Staff Software Engineer and Author of Production Kubernetes
+keyLanguages: Go, Typescript, Java, Python, Rust
+keySystems: Kubernetes, containers, Linux, systemd, Terraform, AWS
+description: | 
+  Experienced software engineer, author, and technical lead specializing in
+  infrastructure and backend systems with a proven track record of building and
+  contributing to large-scale projects.
+points:
+  - point: Co-authored Production Kubernetes, published by O'Reilly.
+  - point: Built, scaled, and managed software and systems at multiple Fortune 500 companies.
+  - point: Have led and maintained multiple large open-source projects.
+experience:
+  - company: Arctir
+    website: arctir.com
+    logoUrl: 'https://files.joshrosso.com/img/site/resume/arctir.png'
+    description: |
+      I left VMware to try my hand at co-founding Arctir, where I'm focusing on
+      defining engineering practices and building the platform. We are an early
+      (pre-revenue) company building a platform that improves visibility into
+      an organization's software landscape. Our stack includes Go, Typescript,
+      React, AWS, and Postgres.
+    jobs:
+      - role: Founding Software Engineer
+        start: 2022-07
+  - company: VMware
+    website: vmware.com
+    logoUrl: 'https://files.joshrosso.com/img/site/resume/vmware.png'
+    description: |
+      I joined VMware as part of the Heptio acquisition. At VMware, I built the
+      technology and team that was VMware Tanzu CE, VMware's open-source
+      Kubernetes distribution. This grew into one of VMware's largest
+      open-source projects, deployed in a variety of scenarios from production
+      platforms to local development environments. As the tech lead, my work
+      included creating design proposals, implementing (coding) features,
+      growing the technical aptitude of the team, and interfacing with product
+      management to help shape the roadmap.
+    accomplishments:
+    - item: Achieved executive-level acceptance and funding of program.
+    - item: Grew the team to 7 full-time engineers.
+    - item: Implemented the unmanaged cluster model, which was widely loved by our users.
+    - item: Became one of VMware's largest open-source projects.
+    jobs:
+      - role: Tech Lead (Sr. Staff Software Engineer)
+        start: 2020-07
+        end: 2022-07
+      - role: Staff Software Engineer
+        start: 2018-10
+        end: 2020-07
+  - company: Heptio
+    logoUrl: 'https://files.joshrosso.com/img/site/resume/heptio.png'
+    description: |
+      I joined Heptio, founded by 2 of the creators of Kubernetes, as an early
+      engineer focusing on field engineering. In Field engineering we are
+      embedded engineers within strategic accounts and help them architecture,
+      deploy, scale, and extend their Kubernetes deployments. During my time in
+      this role, I architected and deployed Kubernetes at some of the largest
+      banks and telcos in the US. Along with architecture work, development was
+      often required to make Kubernetes fit within requirements. This often
+      required writing controllers (typically in Go, sometimes Python), which
+      could extend functionality in Kubernetes. Multiple implementations done
+      at customers were brought back and built into product, such as our
+      namespace provisioner, which enabled self-service environments to teams in an
+      organization. In my work at Heptio, enablement was a huge focus and I
+      have helped many SRE teams get the skill sets needed to support their
+      newly built platform over time. Much of the insight gained from my
+      experience at Heptio was translated into my book Production Kubernetes
+      (O'Reilly). We (Heptio) eventually exited via an acquisition by VMware.
+    accomplishments:
+    - item: Architected and deployed Kubernetes at Heptio's largest account.
+    - item: Built a multitude of platform extensions, some of which became product.
+    - item: Contributed to and built atop Cluster API and kubeadm.
+    jobs:
+      - role: Staff Field Engineer
+        start: 2018-09
+        end: 2018-11
+      - role: Senior Field Engineer
+        start: 2018-03
+        end: 2018-09
+  - company: CoreOS
+    logoUrl: 'https://files.joshrosso.com/img/site/resume/coreos.png'
+    description: |
+      I joined CoreOS as I was excited about their many projects at the
+      forefront of containers and Kubernetes. Including but not limited to
+      etcd, rkt, and fleet. I was an early engineer brought in to split my time
+      between product development and acting as a resident engineer with our
+      customers. While I was involved in a variety of customer deployments, our
+      most notable was with Ticketmaster where we were one of the earliest
+      shops to use Kubernetes in production. Getting to production involved a
+      lot of engineering and platform extensions to make it meet requirements,
+      namely around ingress and network-layer packet routing. This project was
+      a highly-celebrated success along with being one of CoreOS's largest
+      revenue streams. With my time at CoreOS I also authored the AWS Ingress
+      controller, which is used in Amazon EKS today, and built multiple features for
+      Tectonic, CoreOS's Kubernetes platform, which much of the technology was
+      used to power OpenShift. We (CoreOS) eventually exited via an acquisition
+      by RedHat.
+    accomplishments:
+    - item: Engineered a Kubernetes-based platform at Ticketmaster, CoreOS's largest client.
+    - item: Built substantial tooling that became part of Tectonic, operators, etcd, and more.
+    - item: Co-created and maintained the alb-ingress-controller, which is now adopted by EKS.
+    jobs:
+      - role: Senior Software Engineer
+        start: 2016-10
+        end: 2018-03
+  - company: MuleSoft
+    logoUrl: 'https://files.joshrosso.com/img/site/resume/mulesoft.png'
+    description: |
+      I joined MuleSoft with an intent to transition from technical training to
+      full-time software engineering, which I did. This was my first exposure
+      to software at massive scale. My feature work was writing the Java-based
+      API gateway product that was critical path for all API requests used in
+      one of the world's largest food chains. It featured a world-wide cut over
+      and request-per second load that is still one of the highest of my
+      career. Along with software engineering, I facilitated multiple training
+      courses across the globe that enabled Java developers to build
+      integrations with the Mule framework. We (MuleSoft) IPO'd and upon
+      becoming public I transitioned out to CoreOS.
+    accomplishments:
+    - item: Built an API gateway that became part of key product and ran at our largest customer.
+    - item: Engineered a variety of internal data integrations crucial to the training and marketing business.
+    - item: Built OAuth2 flows that powered our gateway product and ensured configurable auth.
+    - item: 'Built multiple (Java) adapters that acted as interfaces to external systems.'
+    jobs:
+      - role: Senior Software Engineer
+        start: 2016-10
+        end: 2018-03
+  - company: Hyland Software
+    website: www.hyland.com
+    logoUrl: 'https://files.joshrosso.com/img/site/resume/hyland.png'
+    description: |
+      Joining Hyland Software was my first foray into software development
+      outside of personal projects. I built curriculum and taught software
+      standards for technical internal employees, often onboarding software
+      engineers, such that they could be brought up to speed with the technical
+      stack of Hyland. During this time I fell in love with software
+      engineering and knew I wanted to find a company open to providing me the
+      opportunity to move out of training into engineering. This motivation
+      brought me to MuleSoft.
+    accomplishments:
+    - item: Created a frontend model for our CRM system that was used to sell OnBase Workview.
+    - item: Delivered the majority of developer and technical trainings to on boarding employees.
+    - item: Built automation that was capable of quickly provisioning training infrastructure idempotently.
+    jobs:
+      - role: Technical Trainer
+        start: 2012-07
+        end: 2013-12
+  - company: Apple
+    website: apple.com
+    logoUrl: 'https://files.joshrosso.com/img/site/resume/apple.png'
+    description: |
+      Spent a few years in Apple retail software and hardware training in the
+      ecosystem. My work here sparked the initial fire in my love for Unix and
+      desire to move into software development full time.
+    jobs:
+      - role: Trainer
+        start: 2009-10
+        end: 2012-07
+publications:
+  - title: Production Kubernetes (O'Reilly)
+    url: https://www.oreilly.com/library/view/production-kubernetes/9781492092292
+    image: 'https://files.joshrosso.com/img/site/resume/prod-k8s.jpeg'
+    description: |  
+      Production Kubernetes is a 500+ page book covering a variety of topics
+      related to building platforms and distributed computing. It is the
+      amalgamation of years of experience architecting, deploying, and extending
+      Kubernetes-based platforms.
+projects:
+  - title: 'Kubecon Talk: Laying the Foundation'
+    url: https://www.youtube.com/watch?v=Rb0JMVVZ1N8
+    description: Talk given around experience deploying Kubernetes at Kubecon EU.
+  - title: 'Bringing AWS Application Load Balancer Support to Kubernets'
+    url: https://youtu.be/OiNK6H4CTCg?t=935 
+    description: |
+      A techinical overview of how we implemented the first AWS-based ingress
+      controller, which is now the official aws-load-balancer-controller.
+  - title: aws-load-balancer-controller
+    url: https://github.com/kubernetes-sigs/aws-load-balancer-controller
+    description: |
+      Co-creator and maintainer while at CoreOS. This project is now used in the
+      Amazon EKS ecosystem.
+  - title: tanzu-community-edition
+    url: https://github.com/vmware-tanzu/community-edition
+    description: |
+      Open source project I led at VMware. Involved in everything from
+      engineering to community engagement. While the project has been
+      sunsetted, much of the technology exists inside Tanzu's commercial
+      offering.
+  - title: joshrosso.com
+    url: https://joshrosso.com
+    description: Blog posts and YouTube videos on a variety of technical interests.
