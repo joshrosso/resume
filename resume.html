@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap');
+
+    html,
+    body {
+      min-height: 100%;
+    }
+
+    body {
+      margin: 0;
+      background-color: rgb(255, 255, 255);
+      font-family: 'JetBrains Mono', monospace;
+      background-color: #eeeeee;
+    }
+
+    .headshot {
+      height: 150px;
+      width: 150px;
+    }
+
+    .view-bar {
+      height: 100%;
+      max-width: 1000px;
+      box-shadow: 10px 0 10px -10px rgba(0, 0, 0, 0.3), -10px 0 10px -10px rgba(0, 0, 0, 0.3);
+      /* Drop shadow on the sides */
+      padding: 20px;
+      margin: 0 auto;
+      color: #fff;
+      background-color: #000;
+    }
+
+    .view-bar a {
+      color: #fff;
+    }
+
+    li {
+      margin-top: 1.2rem;
+    }
+
+    a {
+      color: #000;
+    }
+
+    a:hover {
+      color: rgb(42, 143, 237);
+    }
+
+    .headshot {
+      margin-left: 2rem;
+      border: 1px solid #000;
+    }
+
+    .headshot-container {
+      display: flex;
+      align-items: center;
+    }
+
+    hr {
+      border-color: black;
+    }
+
+    .title {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .details {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    @media (max-width: 500px) {
+      .details {
+        display: block;
+        grid-template-columns: unset;
+      }
+    }
+
+    .indented {
+      margin-top: .5rem;
+      margin-left: 2rem;
+    }
+
+    .details p {
+      margin: 6px;
+    }
+
+    .experience {
+      display: flex;
+      width: 100%;
+    }
+
+    @media (max-width: 500px) {
+      .experience {
+        display: block;
+      }
+    }
+
+    .exp-content {
+      width: 100%;
+    }
+
+    .exp-content h3 {
+      margin-top: 0;
+      border-bottom: 1px solid rgb(207, 207, 207);
+    }
+
+    .logo {
+      margin-right: 1.5rem;
+    }
+
+    .container {
+      background-color: #fff;
+      height: 100%;
+      max-width: 1000px;
+      box-shadow: 10px 0 10px -10px rgba(0, 0, 0, 0.3), -10px 0 10px -10px rgba(0, 0, 0, 0.3);
+      /* Drop shadow on the sides */
+      padding: 20px;
+      margin: 0 auto;
+    }
+
+    .span-2 {
+      grid-column: span 2;
+    }
+  </style>
+  <meta charset="utf-8">
+  <title>Josh Rosso's Resume</title>
+</head>
+
+<body>
+  <div class="view-bar">View this resume in: <a href="https://resume.joshrosso.com">HTML</a>, <a
+      href="https://resume.joshrosso.com/resume.pdf">PDF</a>, or <a
+      href="https://resume.joshrosso.com/resume.txt">txt</a>.
+  </div>
+  <div class="container">
+    <div class="header">
+      <div class="title">
+        <div>
+          <h1>Josh Rosso</h1>
+          <p>Experienced software engineer, author, and technical lead specializing in
+infrastructure and backend systems with a proven track record of building and
+contributing to large-scale projects.
+</p>
+        </div>
+        <div class="headshot-container">
+          <img class="headshot" src="https://files.joshrosso.com/img/site/resume/headshot.jpg">
+        </div>
+      </div>
+      <hr>
+      <div class="details">
+        <p><b>email:</b> <a href="mailto:joshrosso@gmail.com">joshrosso@gmail.com</a></p>
+        <p><b>phone:</b> <a href="tel:(720)853-4740">(720)853-4740</a></p>
+        <p><b>area:</b> <a href="https://www.google.com/maps/place/Boulder,+CO">Boulder, CO</a></p>
+      </div>
+      <div class="details">
+        <p><b>site:</b> <a href="https://joshrosso.com">joshrosso.com</a></p>
+        <p class="span-2"><b>github:</b> <a href="https://github.com/joshrosso">github.com/joshrosso</a></p>
+      </div>
+      <hr>
+      <div class="key-list">
+        <p><b>Languages:</b> Go, Typescript, Java, Python, Rust</p>
+      </div>
+      <hr>
+      <div class="key-list">
+        <p><b>Systems:</b> Kubernetes, containers, Linux, systemd, Terraform, AWS</p>
+      </div>
+      <hr>
+    </div>
+    <div class="publications-container">
+      <h2>Publications</h2>
+      
+      <div class="experience">
+        <div class="logo">
+          <img src="https://files.joshrosso.com/img/site/resume/prod-k8s.jpeg" width="150px" />
+        </div>
+        <div class="exp-content">
+          <h3>Production Kubernetes (O'Reilly)</h3>
+          <p>Production Kubernetes is a 500+ page book covering a variety of topics
+related to building platforms and distributed computing. It is the
+amalgamation of years of experience architecting, deploying, and extending
+Kubernetes-based platforms.
+</p>
+        </div>
+      </div>
+      
+      <hr>
+    </div>
+    <div class="experience-container">
+      <h2>Experience</h2>
+      
+      <div class="experience">
+        <div class="logo">
+          <img src="https://files.joshrosso.com/img/site/resume/arctir.png" width="75px" />
+        </div>
+        <div class="exp-content">
+          <h3>Arctir: Founding Software Engineer</h3>
+          <p>I left VMware to try my hand at co-founding Arctir, where I'm focusing on
+defining engineering practices and building the platform. We are an early
+(pre-revenue) company building a platform that improves visibility into
+an organization's software landscape. Our stack includes Go, Typescript,
+React, AWS, and Postgres.
+</p>
+          
+          <div class="company">
+            <h4>Positions held:</h4>
+            <ul>
+              
+              <li>Founding Software Engineer: July 2022</li>
+              
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+      <div class="experience">
+        <div class="logo">
+          <img src="https://files.joshrosso.com/img/site/resume/vmware.png" width="75px" />
+        </div>
+        <div class="exp-content">
+          <h3>VMware: Tech Lead (Sr. Staff Software Engineer)</h3>
+          <p>I joined VMware as part of the Heptio acquisition. At VMware, I built the
+technology and team that was VMware Tanzu CE, VMware's open-source
+Kubernetes distribution. This grew into one of VMware's largest
+open-source projects, deployed in a variety of scenarios from production
+platforms to local development environments. As the tech lead, my work
+included creating design proposals, implementing (coding) features,
+growing the technical aptitude of the team, and interfacing with product
+management to help shape the roadmap.
+</p>
+          
+          <h4>Accomplishments:</h4>
+          <ul>
+            
+            <li>Achieved executive-level acceptance and funding of program.</li>
+            
+            <li>Grew the team to 7 full-time engineers.</li>
+            
+            <li>Implemented the unmanaged cluster model, which was widely loved by our users.</li>
+            
+            <li>Became one of VMware's largest open-source projects.</li>
+            
+          </ul>
+          
+          <div class="company">
+            <h4>Positions held:</h4>
+            <ul>
+              
+              <li>Tech Lead (Sr. Staff Software Engineer): July 2020 - July 2022</li>
+              
+              <li>Staff Software Engineer: October 2018 - July 2020</li>
+              
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+      <div class="experience">
+        <div class="logo">
+          <img src="https://files.joshrosso.com/img/site/resume/heptio.png" width="75px" />
+        </div>
+        <div class="exp-content">
+          <h3>Heptio: Staff Field Engineer</h3>
+          <p>I joined Heptio, founded by 2 of the creators of Kubernetes, as an early
+engineer focusing on field engineering. In Field engineering we are
+embedded engineers within strategic accounts and help them architecture,
+deploy, scale, and extend their Kubernetes deployments. During my time in
+this role, I architected and deployed Kubernetes at some of the largest
+banks and telcos in the US. Along with architecture work, development was
+often required to make Kubernetes fit within requirements. This often
+required writing controllers (typically in Go, sometimes Python), which
+could extend functionality in Kubernetes. Multiple implementations done
+at customers were brought back and built into product, such as our
+namespace provisioner, which enabled self-service environments to teams in an
+organization. In my work at Heptio, enablement was a huge focus and I
+have helped many SRE teams get the skill sets needed to support their
+newly built platform over time. Much of the insight gained from my
+experience at Heptio was translated into my book Production Kubernetes
+(O'Reilly). We (Heptio) eventually exited via an acquisition by VMware.
+</p>
+          
+          <h4>Accomplishments:</h4>
+          <ul>
+            
+            <li>Architected and deployed Kubernetes at Heptio's largest account.</li>
+            
+            <li>Built a multitude of platform extensions, some of which became product.</li>
+            
+            <li>Contributed to and built atop Cluster API and kubeadm.</li>
+            
+          </ul>
+          
+          <div class="company">
+            <h4>Positions held:</h4>
+            <ul>
+              
+              <li>Staff Field Engineer: September 2018 - November 2018</li>
+              
+              <li>Senior Field Engineer: March 2018 - September 2018</li>
+              
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+      <div class="experience">
+        <div class="logo">
+          <img src="https://files.joshrosso.com/img/site/resume/coreos.png" width="75px" />
+        </div>
+        <div class="exp-content">
+          <h3>CoreOS: Senior Software Engineer</h3>
+          <p>I joined CoreOS as I was excited about their many projects at the
+forefront of containers and Kubernetes. Including but not limited to
+etcd, rkt, and fleet. I was an early engineer brought in to split my time
+between product development and acting as a resident engineer with our
+customers. While I was involved in a variety of customer deployments, our
+most notable was with Ticketmaster where we were one of the earliest
+shops to use Kubernetes in production. Getting to production involved a
+lot of engineering and platform extensions to make it meet requirements,
+namely around ingress and network-layer packet routing. This project was
+a highly-celebrated success along with being one of CoreOS's largest
+revenue streams. With my time at CoreOS I also authored the AWS Ingress
+controller, which is used in Amazon EKS today, and built multiple features for
+Tectonic, CoreOS's Kubernetes platform, which much of the technology was
+used to power OpenShift. We (CoreOS) eventually exited via an acquisition
+by RedHat.
+</p>
+          
+          <h4>Accomplishments:</h4>
+          <ul>
+            
+            <li>Engineered a Kubernetes-based platform at Ticketmaster, CoreOS's largest client.</li>
+            
+            <li>Built substantial tooling that became part of Tectonic, operators, etcd, and more.</li>
+            
+            <li>Co-created and maintained the alb-ingress-controller, which is now adopted by EKS.</li>
+            
+          </ul>
+          
+          <div class="company">
+            <h4>Positions held:</h4>
+            <ul>
+              
+              <li>Senior Software Engineer: October 2016 - March 2018</li>
+              
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+      <div class="experience">
+        <div class="logo">
+          <img src="https://files.joshrosso.com/img/site/resume/mulesoft.png" width="75px" />
+        </div>
+        <div class="exp-content">
+          <h3>MuleSoft: Senior Software Engineer</h3>
+          <p>I joined MuleSoft with an intent to transition from technical training to
+full-time software engineering, which I did. This was my first exposure
+to software at massive scale. My feature work was writing the Java-based
+API gateway product that was critical path for all API requests used in
+one of the world's largest food chains. It featured a world-wide cut over
+and request-per second load that is still one of the highest of my
+career. Along with software engineering, I facilitated multiple training
+courses across the globe that enabled Java developers to build
+integrations with the Mule framework. We (MuleSoft) IPO'd and upon
+becoming public I transitioned out to CoreOS.
+</p>
+          
+          <h4>Accomplishments:</h4>
+          <ul>
+            
+            <li>Built an API gateway that became part of key product and ran at our largest customer.</li>
+            
+            <li>Engineered a variety of internal data integrations crucial to the training and marketing business.</li>
+            
+            <li>Built OAuth2 flows that powered our gateway product and ensured configurable auth.</li>
+            
+            <li>Built multiple (Java) adapters that acted as interfaces to external systems.</li>
+            
+          </ul>
+          
+          <div class="company">
+            <h4>Positions held:</h4>
+            <ul>
+              
+              <li>Senior Software Engineer: October 2016 - March 2018</li>
+              
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+      <div class="experience">
+        <div class="logo">
+          <img src="https://files.joshrosso.com/img/site/resume/hyland.png" width="75px" />
+        </div>
+        <div class="exp-content">
+          <h3>Hyland Software: Technical Trainer</h3>
+          <p>Joining Hyland Software was my first foray into software development
+outside of personal projects. I built curriculum and taught software
+standards for technical internal employees, often onboarding software
+engineers, such that they could be brought up to speed with the technical
+stack of Hyland. During this time I fell in love with software
+engineering and knew I wanted to find a company open to providing me the
+opportunity to move out of training into engineering. This motivation
+brought me to MuleSoft.
+</p>
+          
+          <h4>Accomplishments:</h4>
+          <ul>
+            
+            <li>Created a frontend model for our CRM system that was used to sell OnBase Workview.</li>
+            
+            <li>Delivered the majority of developer and technical trainings to on boarding employees.</li>
+            
+            <li>Built automation that was capable of quickly provisioning training infrastructure idempotently.</li>
+            
+          </ul>
+          
+          <div class="company">
+            <h4>Positions held:</h4>
+            <ul>
+              
+              <li>Technical Trainer: July 2012 - December 2013</li>
+              
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+      <div class="experience">
+        <div class="logo">
+          <img src="https://files.joshrosso.com/img/site/resume/apple.png" width="75px" />
+        </div>
+        <div class="exp-content">
+          <h3>Apple: Trainer</h3>
+          <p>Spent a few years in Apple retail software and hardware training in the
+ecosystem. My work here sparked the initial fire in my love for Unix and
+desire to move into software development full time.
+</p>
+          
+          <div class="company">
+            <h4>Positions held:</h4>
+            <ul>
+              
+              <li>Trainer: October 2009 - July 2012</li>
+              
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+      <hr>
+    </div>
+    <div class="publications-conatiner">
+      <h2>Projects and Talks</h2>
+      <p>I recommend visiting my website, <a href="https://joshrosso.com">joshrosso.com</a>, for a full
+        understanding of my many projects and talks. However, below is a list of
+        some notable ones.</p>
+      <ul>
+        
+        <li><a href="https://youtu.be/U-mSWU4see0">Kubecon Talk: Nix, Kubernetes, and the Pursuit of Reproducibility</a></li>
+        <li class="indented">Talk given around using Nix(OS) to build a k8s stack from hypervisor to container images.</li>
+        
+        <li><a href="https://www.youtube.com/watch?v=Rb0JMVVZ1N8">Kubecon Talk: Laying the Foundation</a></li>
+        <li class="indented">Talk given around experience deploying Kubernetes at Kubecon EU.</li>
+        
+        <li><a href="https://youtu.be/OiNK6H4CTCg?t=935">Bringing AWS Application Load Balancer Support to Kubernets</a></li>
+        <li class="indented">A techinical overview of how we implemented the first AWS-based ingress
+controller, which is now the official aws-load-balancer-controller.
+</li>
+        
+        <li><a href="https://github.com/kubernetes-sigs/aws-load-balancer-controller">aws-load-balancer-controller</a></li>
+        <li class="indented">Co-creator and maintainer while at CoreOS. This project is now used in the
+Amazon EKS ecosystem.
+</li>
+        
+        <li><a href="https://github.com/vmware-tanzu/community-edition">tanzu-community-edition</a></li>
+        <li class="indented">Open source project I led at VMware. Involved in everything from
+engineering to community engagement. While the project has been
+sunsetted, much of the technology exists inside Tanzu's commercial
+offering.
+</li>
+        
+        <li><a href="https://joshrosso.com">joshrosso.com</a></li>
+        <li class="indented">Blog posts and YouTube videos on a variety of technical interests.</li>
+        
+      </ul>
+    </div>
+  </div>
+</body>
+
+</html>

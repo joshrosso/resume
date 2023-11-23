@@ -9,7 +9,7 @@ locationUrl: 'https://www.google.com/maps/place/Boulder,+CO'
 subtitle: Staff Software Engineer and Author of Production Kubernetes
 keyLanguages: Go, Typescript, Java, Python, Rust
 keySystems: Kubernetes, containers, Linux, systemd, Terraform, AWS
-description: | 
+description: |
   Experienced software engineer, author, and technical lead specializing in
   infrastructure and backend systems with a proven track record of building and
   contributing to large-scale projects.
@@ -43,10 +43,10 @@ experience:
       growing the technical aptitude of the team, and interfacing with product
       management to help shape the roadmap.
     accomplishments:
-    - item: Achieved executive-level acceptance and funding of program.
-    - item: Grew the team to 7 full-time engineers.
-    - item: Implemented the unmanaged cluster model, which was widely loved by our users.
-    - item: Became one of VMware's largest open-source projects.
+      - item: Achieved executive-level acceptance and funding of program.
+      - item: Grew the team to 7 full-time engineers.
+      - item: Implemented the unmanaged cluster model, which was widely loved by our users.
+      - item: Became one of VMware's largest open-source projects.
     jobs:
       - role: Tech Lead (Sr. Staff Software Engineer)
         start: 2020-07
@@ -74,9 +74,9 @@ experience:
       experience at Heptio was translated into my book Production Kubernetes
       (O'Reilly). We (Heptio) eventually exited via an acquisition by VMware.
     accomplishments:
-    - item: Architected and deployed Kubernetes at Heptio's largest account.
-    - item: Built a multitude of platform extensions, some of which became product.
-    - item: Contributed to and built atop Cluster API and kubeadm.
+      - item: Architected and deployed Kubernetes at Heptio's largest account.
+      - item: Built a multitude of platform extensions, some of which became product.
+      - item: Contributed to and built atop Cluster API and kubeadm.
     jobs:
       - role: Staff Field Engineer
         start: 2018-09
@@ -103,9 +103,9 @@ experience:
       used to power OpenShift. We (CoreOS) eventually exited via an acquisition
       by RedHat.
     accomplishments:
-    - item: Engineered a Kubernetes-based platform at Ticketmaster, CoreOS's largest client.
-    - item: Built substantial tooling that became part of Tectonic, operators, etcd, and more.
-    - item: Co-created and maintained the alb-ingress-controller, which is now adopted by EKS.
+      - item: Engineered a Kubernetes-based platform at Ticketmaster, CoreOS's largest client.
+      - item: Built substantial tooling that became part of Tectonic, operators, etcd, and more.
+      - item: Co-created and maintained the alb-ingress-controller, which is now adopted by EKS.
     jobs:
       - role: Senior Software Engineer
         start: 2016-10
@@ -124,10 +124,10 @@ experience:
       integrations with the Mule framework. We (MuleSoft) IPO'd and upon
       becoming public I transitioned out to CoreOS.
     accomplishments:
-    - item: Built an API gateway that became part of key product and ran at our largest customer.
-    - item: Engineered a variety of internal data integrations crucial to the training and marketing business.
-    - item: Built OAuth2 flows that powered our gateway product and ensured configurable auth.
-    - item: 'Built multiple (Java) adapters that acted as interfaces to external systems.'
+      - item: Built an API gateway that became part of key product and ran at our largest customer.
+      - item: Engineered a variety of internal data integrations crucial to the training and marketing business.
+      - item: Built OAuth2 flows that powered our gateway product and ensured configurable auth.
+      - item: 'Built multiple (Java) adapters that acted as interfaces to external systems.'
     jobs:
       - role: Senior Software Engineer
         start: 2016-10
@@ -145,9 +145,9 @@ experience:
       opportunity to move out of training into engineering. This motivation
       brought me to MuleSoft.
     accomplishments:
-    - item: Created a frontend model for our CRM system that was used to sell OnBase Workview.
-    - item: Delivered the majority of developer and technical trainings to on boarding employees.
-    - item: Built automation that was capable of quickly provisioning training infrastructure idempotently.
+      - item: Created a frontend model for our CRM system that was used to sell OnBase Workview.
+      - item: Delivered the majority of developer and technical trainings to on boarding employees.
+      - item: Built automation that was capable of quickly provisioning training infrastructure idempotently.
     jobs:
       - role: Technical Trainer
         start: 2012-07
@@ -167,17 +167,20 @@ publications:
   - title: Production Kubernetes (O'Reilly)
     url: https://www.oreilly.com/library/view/production-kubernetes/9781492092292
     image: 'https://files.joshrosso.com/img/site/resume/prod-k8s.jpeg'
-    description: |  
+    description: |
       Production Kubernetes is a 500+ page book covering a variety of topics
       related to building platforms and distributed computing. It is the
       amalgamation of years of experience architecting, deploying, and extending
       Kubernetes-based platforms.
 projects:
+  - title: 'Kubecon Talk: Nix, Kubernetes, and the Pursuit of Reproducibility'
+    url: https://youtu.be/U-mSWU4see0
+    description: 'Talk given around using Nix(OS) to build a k8s stack from hypervisor to container images.'
   - title: 'Kubecon Talk: Laying the Foundation'
     url: https://www.youtube.com/watch?v=Rb0JMVVZ1N8
     description: Talk given around experience deploying Kubernetes at Kubecon EU.
   - title: 'Bringing AWS Application Load Balancer Support to Kubernets'
-    url: https://youtu.be/OiNK6H4CTCg?t=935 
+    url: https://youtu.be/OiNK6H4CTCg?t=935
     description: |
       A techinical overview of how we implemented the first AWS-based ingress
       controller, which is now the official aws-load-balancer-controller.
